@@ -35,5 +35,6 @@ dependencies {
     compile 'com.adobe.creativesdk.foundation:assets:0.3.94'
     compile 'com.adobe.creativesdk:behance:0.3.94'
     compile 'com.adobe.creativesdk:image:4.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
 }

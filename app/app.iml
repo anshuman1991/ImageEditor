@@ -88,10 +88,11 @@
     <orderEntry type="library" exported="" name="hlistview-1.3.1" level="project" />
     <orderEntry type="library" exported="" name="imagezoom-2.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-21.0.3" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
     <orderEntry type="library" exported="" name="assets-0.3.94" level="project" />
     <orderEntry type="library" exported="" name="commons-io-2.4" level="project" />
-    <orderEntry type="library" exported="" name="behance-0.3.94" level="project" />
     <orderEntry type="library" exported="" name="disklrumulticache-1.0.5" level="project" />
+    <orderEntry type="library" exported="" name="behance-0.3.94" level="project" />
     <orderEntry type="library" exported="" name="palette-v7-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="eventbus-2.2.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-21.0.3" level="project" />

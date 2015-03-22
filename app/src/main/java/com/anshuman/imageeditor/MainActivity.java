@@ -100,10 +100,8 @@ public class MainActivity extends ActionBarActivity {
                         .withOutputQuality(90) // output quality
                         .build();
                 startActivityForResult(newIntent, 1);
-
             }
             else if(requestCode == 1){
-                Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_LONG).show();
             }
 
         }
