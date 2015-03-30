@@ -13,6 +13,14 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="buy_where">Where did you buy this?</string>
+
+    <string name="brand">Brand</string>
+
+    <string name="URL">URL</string>
+
+
     <string name="action_example">Example action</string>
     <string name="title_activity_tag">TagActivity</string>
+    <string name="title_activity_save_image_tag">SaveImageTagActivity</string>
 </resources>

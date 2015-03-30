@@ -51,6 +51,10 @@
             android:name=".TagActivity"
             android:label="@string/title_activity_tag" >
         </activity>
+        <activity
+            android:name=".SaveImageTagActivity"
+            android:label="@string/title_activity_save_image_tag" >
+        </activity>
     </application>
 
 </manifest>

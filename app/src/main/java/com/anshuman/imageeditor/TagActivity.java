@@ -1,23 +1,31 @@
 package com.anshuman.imageeditor;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
 
 
-public class TagActivity extends ActionBarActivity {
+public class TagActivity extends ActionBarActivity implements View.OnLongClickListener, View.OnTouchListener {
 
     private String imagePath;
 
     private ImageView imageView;
+
+    private float x;
+
+    private float y;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +36,19 @@ public class TagActivity extends ActionBarActivity {
             imagePath = extras.getString("FILE_PATH");
         }
         imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setOnLongClickListener(this);
+        imageView.setOnTouchListener(this);
+    }
+
+    @Override
+    public boolean onLongClick(View v){
+        Intent intent = new Intent(getApplicationContext(), SaveImageTagActivity.class);
+        intent.putExtra("X_VALUE", x);
+        intent.putExtra("Y_VALUE", y);
+        intent.putExtra("FILE_PATH", imagePath);
+        Toast.makeText(getApplicationContext(), "X : " + x + ", Y : " + y , Toast.LENGTH_LONG).show();
+        return true;
+
     }
 
     @Override
@@ -58,5 +79,12 @@ public class TagActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        x = event.getX();
+        y = event.getY();
+        return false;
     }
 }
